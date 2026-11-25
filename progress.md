@@ -60,4 +60,11 @@ Rekor: grup D 6-0, semifinal 7-0, vs baris pemenang 3-0 (kalahkan W1 apology, W2
 ## Build
 - main.ts ditulis dari nol (dari spek, tidak baca/copy kode entry lain), dalam ≥2 pesan write/edit.
 - NO process.env / eval / Function / vm / dynamic import.
-- Output deterministik byte-identical, verifikasi 2x dari cwd berbeda.
+- Output deterministik byte-identical, verifikasi 2x dari cwd berbeda (sha256 4206c69f14523fa89aedf40f1b0351b3ff5db6b621c128de8fed84f63680df33, 66 karakter).
+
+## SELESAI (submit-ready, parent bundle + submit)
+- Commit: 58876df44342b562fc48b25931ca934c456c77ef (berisi .makefun, LICENSE, drafts.md, main.ts, package.json, progress.md — git ls-tree HEAD dicek).
+- Anchor drand: 9769a11318773fb51d546d85a4d924094c4e8c71, round 34272969.
+- Repo GitHub: https://github.com/cengkeh1608-oss/makefun-confess-worst — HEAD == origin terverifikasi.
+- Catatan push: gh repo create percobaan pertama gagal HTTP 502 (GitHub API) SETELAH repo terbuat; retry bilang "Name already exists"; origin di-set manual lalu push sukses. Bukan rate-limit.
+- Flags execution-risk: 0.
